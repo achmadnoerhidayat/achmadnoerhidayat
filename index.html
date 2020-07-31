@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Commit pertama</title>
+    <title>Web Protofolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>halo commit</p>
+    <section>
+        <div class="content">
+            <div>
+                <h2>Achmad Noerhidayat</h2>
+                <p>Halo saya Achmad Noerhidayat saya searang web development dan freelancer</p>
+                <a href="">Learn More</a>
+            </div>
+        </div>
+        <div class="imgBx">
+            <img src="images/gambar.png" alt="" srcset="">
+        </div>
+        <ul class="nav" id="nav">
+            <li><a href="">Home</a></li>
+            <li><a href="" class="active">About</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Protofolio</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <span class="menuicon" id="toggle" onclick="menuToggle()"></span>
+        <script type="text/javascript">
+            function menuToggle(){
+                var nav = document.getElementById("nav");
+                nav.classList.toggle('active')
+            }
+        </script>
+    </section>
 </body>
 </html>
