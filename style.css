@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
-section{
+.atas{
     position: relative;
     widows: 100%;
     min-height: 100vh;
@@ -14,7 +14,7 @@ section{
     justify-content: space-between;
     align-items: center;
 }
-section:before{
+.atas:before{
     content: '';
     position: absolute;
     top: 0;
@@ -22,12 +22,12 @@ section:before{
     width: 100%;
     height: 100%;
     background: #ff2562;
-    clip-path: polygon(54% 0, 100% 0, 100% 100%, 73% 100%);
+    clip-path: circle(22.7% at 75% 59%);
     animation: fade-in 0.5s ease-in forwards;
     animation-delay: 1.5s;
     opacity: 0;
 }
-section .content{
+.atas .content{
     position: relative;
     padding: 100px 50px 100px 150px;
     box-sizing: border-box;
@@ -35,16 +35,16 @@ section .content{
     animation-delay: 0.5s;
     opacity: 0;
 }
-section .content h2{
+.atas .content h2{
     color: #ffffff;
     font-size: 3em;
     font-weight: 800;
 }
-section .content p{
+.atas .content p{
     color: #ffffff;
     font-size: 1.2em;
 }
-section .content a{
+.atas .content a{
     position: relative;
     display: inline-block;
     padding: 15px 30px;
@@ -57,11 +57,11 @@ section .content a{
     font-weight: 700;
     letter-spacing: 2px;
 }
-section .imgBx{
+.atas .imgBx{
     position: relative;
     padding-right: 100px;
 }
-section .imgBx img{
+.atas .imgBx img{
     max-width: 500px;
     animation: fade-in 0.5s ease-in forwards;
     animation-delay: 2s;
@@ -93,6 +93,47 @@ section .imgBx img{
 .nav a:hover{
     color: #ff2562;
 }
+.clear{
+    clear: both;
+}
+.tengah{
+    min-height: 100vh;
+    background-color: #222222;
+    justify-content: space-between;
+    align-items: center;
+}
+.tengah h2{
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.tengah .contents{
+    padding: 10px 50px 100px 150px;
+    box-sizing: border-box;
+}
+.tengah .contents .card{
+    width: 33%;
+    float: left;
+}
+.tengah .contents .card .card-body{
+    background: #ffffff;
+    margin: 0 5px;
+}
+.tengah .contents .card .card-body img{
+    width: 100%;
+    height: 100%;
+}
+.tengah .contents .card .card-body .text{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #86a012;
+}
+.tengah .contents .card .card-body .texts{
+    text-align: center;
+    font-size: 14px;
+}
 @keyframes fade-in{
     0%{
         opacity: 0;
@@ -116,14 +157,75 @@ section .imgBx img{
     .menuicon{
         position: fixed;
         top: 40px;
-        right: 90px;
+        right: 40px;
         width: 30px;
         height: 30px;
         background: url(images/menu.png);
         filter: invert(1);
-        background-size: 31px;
+        background-size: 30px;
         cursor: pointer;
         background-repeat: no-repeat;
         z-index: 1000;
+    }
+    .menuicon.active{
+        background: url(images/images.png);
+        filter: invert(1);
+        background-size: 30px;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        z-index: 1000;
+    }
+    .nav{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .95);
+        flex-direction: column;
+        z-index: 11;
+        border: none;
+        padding: 50px;
+    }
+    .nav.active{
+        left: 0;
+    }
+    .nav li{
+        margin: 5px 0;
+    }
+    .atas{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .atas:before{
+        clip-path: polygon(0 0, 100% 0, 100% 30%, 0 46%);
+    }
+    .atas .content{
+        padding: 50px;
+        margin-bottom: 30px;
+    }
+    .atas .content h2{
+        font-size: 1.5em;
+    }
+    .atas .content p{
+        font-size: 0.9em;
+    }
+    .atas .imgBx{
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0;
+        margin-top: 20px;
+    }
+    .atas .imgBx img{
+        max-width: 300px;
+    }
+    .tengah .contents .card{
+        width: 100% !important;
+        margin-bottom: 5px;
+    }
+    .tengah .contents .card .card-body img{
+        height: 100px !important;
     }
 }

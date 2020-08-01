@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
+    <section class="atas">
         <div class="content">
             <div>
                 <h2>Achmad Noerhidayat</h2>
-                <p>Halo saya Achmad Noerhidayat saya searang web development dan freelancer</p>
+                <p>Halo saya Achmad Noerhidayat saya seorang web development dan freelancer</p>
                 <a href="">Learn More</a>
             </div>
         </div>
@@ -30,8 +30,38 @@
             function menuToggle(){
                 var nav = document.getElementById("nav");
                 nav.classList.toggle('active')
+                var nav = document.getElementById("toggle");
+                nav.classList.toggle('active')
             }
         </script>
+    </section>
+    
+    <section class="tengah">
+        <h2>Apa yang bisa saya kerjakan</h2>
+        <div class="contents">
+            <div class="card">
+                <div class="card-body">
+                    <img src="images/koper.jpg" alt="" srcset="">
+                    <p class="text">Modern Desain</p>
+                    <p class="texts">Membuat Tampilan website Modern Dan Bersih Untuk Bisnis Perusahaan</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <img src="images/koper.jpg" alt="" srcset="">
+                    <p class="text">Desain Responsive</p>
+                    <p class="texts">Membuat desain website yang responsive dan mobile frendly</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <img src="images/koper.jpg" alt="" srcset="">
+                    <p class="text">Membuat code Bersih</p>
+                    <p class="texts">Membuat kode yang bersih menggunakan HTML5 dan CSS3 dan custome tampilan web</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
     </section>
 </body>
 </html>
