@@ -174,8 +174,7 @@
     text-align: center;
     border-radius: 50%;
     opacity: 0;
-    animation: ease-in;
-    animation-delay: 1ms;
+    transition: 1s;
     text-decoration: none;
 }
 .tengah .contents .port .port-body:hover a{
