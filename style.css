@@ -97,7 +97,7 @@
     clear: both;
 }
 .tengah{
-    min-height: 100vh;
+    min-height: 500vh;
     background-color: #222222;
     justify-content: space-between;
     align-items: center;
@@ -107,10 +107,11 @@
     color: #ffffff;
     font-size: 30px;
     text-transform: uppercase;
+    margin: 50px 0;
 }
 .tengah .contents{
     padding: 10px 50px 100px 150px;
-    box-sizing: border-box;
+    box-sizing: border-box;;
 }
 .tengah .contents .card{
     width: 33%;
@@ -133,6 +134,53 @@
 .tengah .contents .card .card-body .texts{
     text-align: center;
     font-size: 14px;
+}
+.tengah .contents .cards{
+    float: left;
+    width: 50%;
+}
+.tengah .contents .cards .card-body img{
+    padding: 10px;
+    width: 98%;
+    height: 280px;
+}
+.tengah .contents .cards .card-body p#text{
+    text-align: justify;
+    font-size: 20px;
+    color: #ffffff;
+}
+.tengah .contents .port{
+    width: 33%;
+    float: left;
+}
+.tengah .contents .port .port-body{
+    margin: 0 5px;
+    position: relative;
+}
+.tengah .contents .port .port-body img{
+    width: 70%;
+    height: 250px;
+    border-radius: 50%;
+}
+.tengah .contents .port .port-body a{
+    position: absolute;
+    width: 70%;
+    height: 250px;
+    top: 0;
+    left: 0;
+    font-size: 1.5em;
+    background: rgba(253, 250, 250, 0.653);
+    line-height: 255px;
+    text-align: center;
+    border-radius: 50%;
+    opacity: 0;
+    animation: ease-in;
+    animation-delay: 1ms;
+    text-decoration: none;
+}
+.tengah .contents .port .port-body:hover a{
+    opacity: 1;
+    
 }
 @keyframes fade-in{
     0%{
@@ -221,11 +269,40 @@
     .atas .imgBx img{
         max-width: 300px;
     }
+    .tengah .contents{
+        padding: 10px;
+    }
+    .tengah h2{
+        font-size: 20px;
+    }
     .tengah .contents .card{
-        width: 100% !important;
+        width: 50% !important;
         margin-bottom: 5px;
+    }
+    .tengah .contents .card .card-body{
+        height: 220px !important;
     }
     .tengah .contents .card .card-body img{
         height: 100px !important;
+    }
+    .tengah .contents .card .card-body .text{
+        font-size: 16px;
+    }
+    #text{
+        font-size: 11px !important;
+        text-align: start !important;
+    }
+    .tengah .contents .port{
+        width: 100%;
+    }
+    .tengah .contents .port .port-body{
+        text-align: center;
+    }
+    .tengah .contents .port .port-body img{
+        margin-bottom: 20px;
+    }
+    .tengah .contents .port .port-body a{
+        left: 55px;
+        text-align: center;
     }
 }
