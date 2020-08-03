@@ -23,7 +23,7 @@
             <li><a href="#about" class="active">About</a></li>
             <li><a href="#service">Service</a></li>
             <li><a href="#protofolio">Protofolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <span class="menuicon" id="toggle" onclick="menuToggle()"></span>
         <script type="text/javascript">
@@ -92,6 +92,34 @@
                     <a href="">Website Blog</a>
                 </div>
             </div>
+            <div class="clear"></div>
+            <h2 id="client">Client dan ulasan</h2>
+            <div class="client">
+                <div class="client-body">
+                    <img src="images/ayo.png" alt="" srcset="">
+                    <p>Mau belajar cepat dan punya bakat</p>
+                </div>
+            </div>
+            <h2 id="contact">Contact</h2>
+            <form  action="">
+                <div id="form">
+                    <div class="form-group">
+                        <input type="text" name="Username" id="" placeholder="Masukan Username ..">
+                        <img src="images/user.png" alt="" srcset="">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="" placeholder="Masukan Email ..">
+                        <img src="images/email.png" alt="" srcset="">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="subject" id="" cols="30" rows="10" placeholder="Masukna Subject"></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <h4>Berhubungan</h4>
+            <p>Untuk pertanyaan bisnis, silahkan kirim email ke <a href="mailto:achmadnurhidayat17@gmail.com">achmadnurhidayat17@gmail.com</a></p>
         </div>
     </section>
     <script src="js/scrollreveal.min.js"></script>
@@ -107,7 +135,11 @@
         sr.reveal('#about',{delay: 300});
         sr.reveal('.cards',{delay: 500});
         sr.reveal('#protofolio',{delay: 300});
-        sr.reveal('.port',{delay: 500});
+        sr.reveal('.port',{interval: 500});
+        sr.reveal('#client',{delay: 300});
+        sr.reveal('.client',{delay: 500});
+        sr.reveal('#contact',{delay: 300});
+        sr.reveal('#form',{delay: 500});
     </script>
 </body>
 </html>

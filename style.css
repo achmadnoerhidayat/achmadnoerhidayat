@@ -97,7 +97,7 @@
     clear: both;
 }
 .tengah{
-    min-height: 500vh;
+    min-height: 300vh;
     background-color: #222222;
     justify-content: space-between;
     align-items: center;
@@ -179,7 +179,62 @@
 }
 .tengah .contents .port .port-body:hover a{
     opacity: 1;
-    
+}
+.tengah .contents .client .client-body{
+    display: flex;
+    background: #5f5a5abd;
+}
+.tengah .contents .client .client-body img{
+    width: 400px;
+    height: 150px;
+    margin-left: 20%;
+    margin-top: -20px;
+}
+.tengah .contents .client .client-body p{
+    color: #ffffff;
+    font-size: 1.2em;
+    line-height: 200px;
+    padding: 0 20px;
+}
+.tengah .contents form #form{
+    margin: 0 25%;
+}
+.tengah .contents form #form .form-group{
+    width: 500px;
+    margin: 10px 0;
+    position: relative;
+}
+.tengah .contents form #form .form-group input{
+    width: 100%;
+    padding: 10px 50px;
+    border: 0px solid #22222247;
+    border-radius: 20px;
+}
+.tengah .contents form #form .form-group img{
+    width: 40px;
+    height: 35px;
+    padding: 1px 0px;
+    position: absolute;
+    top: 0; left: 4px;
+    border-radius: 10px 0px 0px 10px;
+}
+.tengah .contents form #form .form-group textarea{
+    width: 100%;
+    padding: 10px 50px;
+    border: 0px solid #13010147;
+    border-radius: 20px;
+}
+.footer{
+    padding: 50px;
+    background: #0e0404;
+    height: 250px;
+    color: #ffffff;
+}
+.footer h4{
+    font-size: 30px;
+}
+.footer p a{
+    color: #ffffff;
 }
 @keyframes fade-in{
     0%{
@@ -303,5 +358,26 @@
     .tengah .contents .port .port-body a{
         left: 55px;
         text-align: center;
+    }
+    .tengah .contents .client .client-body{
+        height: 100px;
+    }
+    .tengah .contents .client .client-body img{
+        width: 135px;
+        height: 80px;
+        margin: 0;
+    }
+    .tengah .contents .client .client-body p{
+        line-height: 100px;
+        font-size: 10px;
+    }
+    .tengah .contents form #form{
+        margin: 0 10%;
+    }
+    .tengah .contents form #form .form-group input{
+        width: 53%;
+    }
+    .tengah .contents form #form .form-group textarea{
+        width: 53%;
     }
 }
