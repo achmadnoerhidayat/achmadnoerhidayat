@@ -5,6 +5,50 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+.title h2,
+.title p{
+    font-size: 42px;
+    font-weight: 600;
+    color: #231F20;
+}
+.text-bold{
+    font-size: 36px;
+    font-weight: bold;
+}
+.text-skils{
+    font-size: 26px;
+    font-weight: 600;
+    position: absolute;
+    top: 20%;
+}
+.text-project{
+    font-size: 18px;
+    font-weight: 100;
+    color: #a7a1a1;
+}
+.shadow{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card-img{
+    height: 300px;
+}
+.relative{
+    position: relative;
+}
+.txt-about{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 15%;
+}
+.text-name{
+    color: #19dd23 !important;
+}
+.img-profile{
+    margin-top: -89px;
+    width: 450px;
+    height: 291px
+}
 .atas{
     position: relative;
     widows: 100%;
