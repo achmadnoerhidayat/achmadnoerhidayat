@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-/* *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-} */
+}
 .title h2,
 .title p{
     font-size: 42px;
@@ -50,11 +50,18 @@
     height: 291px
 }
 @media (max-width: 576px) { 
+    .title h2,
+    .title p{
+        font-size: 25px;
+        font-weight: 600;
+        color: #231F20;
+    }
     .img-profile{
         display: none !important;
     }
     #about{
-        min-height: 100vh;
+        margin-top: -100px;
+        min-height: 105vh;
     }
     #skils img{
         width: 100%;
