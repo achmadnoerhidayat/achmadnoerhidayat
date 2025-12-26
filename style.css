@@ -1,72 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+html {
+  scroll-behavior: smooth;
 }
-.title h2,
-.title p{
-    font-size: 42px;
-    font-weight: 600;
-    color: #231F20;
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #030712;
+  color: white;
 }
-.text-bold{
-    font-size: 36px;
-    font-weight: bold;
+
+.nav-blur {
+  background: rgba(3, 7, 18, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
-.text-skils{
-    font-size: 26px;
-    font-weight: 600;
-    position: absolute;
-    top: 20%;
+
+.glass-card {
+  background: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  transition: all 0.3s ease;
 }
-.text-project{
-    font-size: 18px;
-    font-weight: 100;
-    color: #a7a1a1;
+
+.glass-card:hover {
+  border-color: #3b82f6;
+  background: #141e33;
 }
-.shadow{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+.timeline-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.1);
 }
-.card-img{
-    height: 300px;
+
+.timeline-dot {
+  position: absolute;
+  left: -4px;
+  top: 0;
+  width: 9px;
+  height: 9px;
+  background: #3b82f6;
+  border-radius: 50%;
+  box-shadow: 0 0 12px #3b82f6;
 }
-.relative{
-    position: relative;
+
+.skill-tag {
+  background: rgba(59, 130, 246, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 11px;
+  color: #94a3b8;
+  font-weight: 600;
 }
-.txt-about{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 15%;
+
+section {
+  scroll-margin-top: 100px;
 }
-.text-name{
-    color: #19dd23 !important;
-}
-.img-profile{
-    margin-top: -89px;
-    width: 450px;
-    height: 291px
-}
-@media (max-width: 576px) { 
-    .title h2,
-    .title p{
-        font-size: 25px;
-        font-weight: 600;
-        color: #231F20;
-    }
-    .img-profile{
-        display: none !important;
-    }
-    #about{
-        margin-top: -100px;
-        min-height: 105vh;
-    }
-    #skils img{
-        width: 100%;
-    }
-    #skils .col-md-6{
-        width: 50%;
-    }
- }
